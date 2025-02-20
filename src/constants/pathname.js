@@ -1,5 +1,5 @@
 export const PathName = {
-    Home: '/home',
+    Home: '/',
     About: '/about',
     Projects: '/projects',
 }
