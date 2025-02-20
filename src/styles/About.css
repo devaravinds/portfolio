@@ -1,0 +1,13 @@
+.about-container {
+    padding: 0% 3%
+}
+
+.about-title {
+    margin-top: 3%;
+    font-size: 80px;
+}
+
+.about-text {
+    font-size: 20px;
+    margin-bottom: 3%;
+}
