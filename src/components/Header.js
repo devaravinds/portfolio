@@ -1,26 +1,23 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import '../styles/Header.css';
-import githubLogo from '../resources/github.png';
 
-const Header = () => {
+const Header = ({ siteName, links, githubUrl, githubLogo }) => {
     return (
         <header className="header">
-            <h1 className="site-name">S Dev Aravind</h1>
+            <h1 className="site-name">{siteName}</h1>
             <nav className="nav-links">
-                <Link to="home-section" smooth={true} duration={500}>
-                    <h2>Home</h2>
-                </Link>
-                <Link to="about-section" smooth={true} duration={500}>
-                    <h2>About</h2>
-                </Link>
-                <Link to="projects-section" smooth={true} duration={500}>
-                    <h2>Projects</h2>
-                </Link>
+                {links.map((link, index) => (
+                    <Link key={index} to={link.to} smooth={true} duration={500}>
+                        <h2>{link.label}</h2>
+                    </Link>
+                ))}
             </nav>
-            <a href="https://github.com/devaravinds" target="_blank" rel="noopener noreferrer">
-                <img src={githubLogo} alt="GitHub" className="github-logo" />
-            </a>
+            {githubUrl && githubLogo && (
+                <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                    <img src={githubLogo} alt="GitHub" className="github-logo" />
+                </a>
+            )}
         </header>
     );
 };
