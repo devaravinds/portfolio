@@ -1,6 +1,7 @@
 import Body from "./Body";
 import Header from "./Header";
 import About from './About';
+import Projects from "./Projects";
 import '../styles/Home.css';
 import githubLogo from '../resources/github.png';
 
@@ -20,6 +21,7 @@ const Home = () => {
             />
             <Body />
             <About />
+            <Projects />
         </div>
     );
 };

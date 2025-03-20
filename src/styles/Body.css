@@ -44,6 +44,13 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.resume-logo-container:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {

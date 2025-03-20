@@ -1,11 +1,11 @@
-import '../styles/About.css'
+import '../styles/Content.css'
 
 const About = () => {
     return (
         <section id="about-section">
-            <div className='about-container'>
-                <h1 className="about-title">about.</h1>
-                <p className="about-text">
+            <div className='content-container'>
+                <h1 className="content-title">about.</h1>
+                <p className="content-text">
                     Hi, I'm Dev, a results-driven full-stack developer with
                     2+ years of experience building scalable and high-performance systems.
                     I specialize in backend development using NestJS, Spring Boot, and Gin,
