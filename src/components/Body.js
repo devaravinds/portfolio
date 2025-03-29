@@ -23,7 +23,7 @@ const Body = () => {
                     <ImageCard imageSrc={sampleImage} />
                 </div>
             </div>
-            <a href="https://drive.google.com/file/d/1w35lyKBre6LityDSpMffs8fWRmcAIN_j/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-logo-container">
+            <a href="https://drive.google.com/file/d/1A3m_9r7JIWz9yTXVDdHijGb4ZToRfFQ0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="resume-logo-container">
                 <img src={resumeImage} alt="resume" className="resume-logo"/>
             </a>
         </div>
